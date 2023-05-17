@@ -1,0 +1,33 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+img {
+    padding: 10px;
+}
+
+img:hover {
+    color: white;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+span.item-content:hover {
+    background-color: #2E374B;
+    height: 65px;
+    width: 258px;
+    left: 30px;
+    top: 156px;
+    border-top-left-radius: 16.34px;
+    border-bottom-left-radius: 16.34px;
+    color: white;
+}
+.hsgNmC {
+    list-style: none;
+    margin: 0px;
+}

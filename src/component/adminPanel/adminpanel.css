@@ -1,0 +1,49 @@
+/* #adminPanel{
+    background-color:#EDEDF6;
+} */
+
+.head{
+    font-family: Open Sans;
+font-size: 29px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+    
+
+.d-flex.justify-content-space-between.align-items-end {
+    justify-content: space-between;
+}
+col-md-4.client{
+    padding: 35px;
+}
+col-md-4.agent{
+    padding: 35px;
+}
+.client {
+    background-color: #dac9c9;
+    border-radius: 20px;
+    padding: 30px;
+    
+}
+.consumer{
+    background-color: #dac9c9;
+    border-radius: 20px;
+    padding: 30px;
+}
+.agent{
+    background-color: #dac9c9;
+    border-radius: 20px;
+    padding: 30px;
+    /* margin: 5px; */
+
+}
+.col-md-4.client {
+    padding: 35px;
+}
+.col-md-4.agent {
+    padding: 35px;
+}
