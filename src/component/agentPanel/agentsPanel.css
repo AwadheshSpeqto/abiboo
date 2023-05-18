@@ -1,0 +1,20 @@
+.Agents {
+    display: flex;
+    justify-content: space-between;
+}
+.agentsdetails {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+    margin-top: 47px;
+}
+.agentName.pt-3 {
+    display: flex;
+    justify-content: space-around;
+}
+.agentspanel {
+    border: 21px solid rgb(118, 71, 71);
+    border-radius: 20px;
+    padding: 36px;
+    background-color: rgb(196, 203, 204);
+}

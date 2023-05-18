@@ -1,6 +1,4 @@
-/* #adminPanel{
-    background-color:#EDEDF6;
-} */
+
 
 .head{
     font-family: Open Sans;
@@ -11,11 +9,14 @@ letter-spacing: 0em;
 text-align: left;
 
 }
-
+.buttons{
+    padding: 15px;
+}
     
 
 .d-flex.justify-content-space-between.align-items-end {
     justify-content: space-between;
+    padding: 15px;
 }
 col-md-4.client{
     padding: 35px;
@@ -46,4 +47,10 @@ col-md-4.agent{
 }
 .col-md-4.agent {
     padding: 35px;
+}
+
+tr:hover{
+    background-color:#dac9c9;
+    color: white;
+    border-radius: 30px;
 }

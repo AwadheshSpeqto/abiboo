@@ -6,7 +6,7 @@ import {
     CDBSidebarContent,
     CDBSidebarMenu,
   } from 'cdbreact';
-  import logo from '../../assests/abiboologo.png';
+  import logo from '../../assests/Abiboo.png';
   import '../Utils/sidebar.css';
   import fourDot from '../../assests/icons/element-4.png';
   import chart from '../../assests/icons/chart-2.png';
@@ -17,16 +17,16 @@ import { NavLink } from 'react-router-dom';
 export default function Sidebar() {
   return (
     <>
-        <div className='container-fluid'>
+        <div className='container-fluid' style={{width:'289px'}}>
         <div className='row sidebar'>
         <div className='col-lg-3 col-md-6 '>
-      <CDBSidebar textColor="#333" backgroundColor="#f0f0f0">
+      <CDBSidebar textColor="#333" backgroundColor="#dac9c9">
         <CDBSidebarHeader>
           <div className="container" style={{ display: 'flex', alignItems: 'center' }}>
             <img
               src={logo}
               alt=""
-              style={{ width: '200px',height:'150px',top:'16px',left:'24px' }}
+              style={{ width: '200px',height:'179px' }}
             />
           </div>
         </CDBSidebarHeader>
@@ -40,7 +40,7 @@ export default function Sidebar() {
             <NavLink to="/clientpanel">
             <CDBSidebarMenuItem>
             <img src={chart} />
-            Clinet Management</CDBSidebarMenuItem>
+            Client Management</CDBSidebarMenuItem>
             </NavLink>
             <NavLink to="/agentpanel">
             <CDBSidebarMenuItem>

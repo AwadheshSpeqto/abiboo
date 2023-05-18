@@ -1,59 +1,40 @@
+
 import React from 'react';
-import ReactApexChart from 'react-apexcharts';
-import ApexCharts from 'react-apexcharts'
-class Charts extends React.Component {
-    constructor(props) {
-      super(props);
+import Chart from 'react-apexcharts';
 
-      this.state = {
-      
-        series: [{
-            name: "Desktops",
-            data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
-        }],
-        options: {
-          chart: {
-            height: 350,
-            type: 'line',
-            zoom: {
-              enabled: false
-            }
-          },
-          dataLabels: {
-            enabled: false
-          },
-          stroke: {
-            curve: 'straight'
-          },
-          title: {
-            text: 'Product Trends by Month',
-            align: 'left'
-          },
-          grid: {
-            row: {
-              colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-              opacity: 0.5
-            },
-          },
-          xaxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-          }
-        },
-      
-      
-      };
+const Charts = () => {
+  const data = [
+    {
+      name: 'Streams',
+      data: [90, 25, 0, 50, 60, 20, 30, 40, 50,60,70,80],
+    },
+    {
+      name: 'Customers',
+      data: [50, 0, 30, 5, 10, 70, 80, 90, 100,110,120,130],
+    },
+  ];
+
+  const options = {
+    chart: {
+      id: 'double-line-chart',
+    },
+    xaxis: {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep','Oct','Nov','Dec'],
+    },
+    yaxis: {
+      min: 0,
+      max: 250
     }
-
-  
-
-    render() {
-      return (
-        
-
-  <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} width={1000} />
-</div>
-      )
-    }
+    
   };
-  export default Charts;
+
+  return (
+    <div className='container mt-5' style={{backgroundColor:'#dac9c9',borderRadius:'20px',border:'25px solid rgb(83, 71, 71)'}}>
+    <div className='row'>
+    <Chart options={options} series={data} type="line" height={350} width={1000} />
+    </div>
+    </div>
+  );
+};
+
+export default Charts;

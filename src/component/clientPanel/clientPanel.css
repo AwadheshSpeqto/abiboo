@@ -1,0 +1,45 @@
+.ClientPanel{
+    overflow: hidden;
+}
+
+.Cpanel{
+    font-family: Open Sans;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+div.row{
+    margin: 0;
+    padding: 0;
+}
+.row>*{
+    padding: 0 !important;
+}
+ .Cdetails {
+        display: flex;
+        justify-content: space-between;
+        font-family: Open-Sans;
+    }
+    input[type="text"] {
+        width: 202px;
+        height: 37px;
+        border-radius: 10px;
+        background-color: white !important;
+    }
+    .clientTable.pt-4 {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+    }
+    .ClientName {
+        display: flex;
+        justify-content: space-around;
+    }
+    .Details {
+        background-color: rgb(194, 174, 174);
+        border-radius: 20px;
+        border: 20px solid rgb(83, 71, 71);
+    }
+    

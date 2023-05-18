@@ -3,6 +3,8 @@ import "./adminpanel.css";
 import create from "../../assests/icons/add-square.png";
 import client from '../../assests/icons/Frame 3.png';
 import Agent from '../../assests/icons/Frame 26.png';
+import Tables from '../../component/adminPanel/Tables';
+import Charts from "../../component/adminPanel/Charts";
 
 
 export default function AdminPanel() {
@@ -38,7 +40,7 @@ export default function AdminPanel() {
                 </div>
                 </div>
                 <br />
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end buttons">
                   <button
                     type="button"
                     style={{
@@ -46,6 +48,7 @@ export default function AdminPanel() {
                       color: "white",
                       width: "70px",
                       borderRadius: "20px",
+                      height:'30px',
                     }}
                   >
                     see info
@@ -63,7 +66,7 @@ export default function AdminPanel() {
                 </div>
                 </div>
                 <br />
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end buttons">
                   <button
                     type="button"
                     style={{
@@ -71,6 +74,7 @@ export default function AdminPanel() {
                       color: "white",
                       width: "70px",
                       borderRadius: "20px",
+                      height:'30px',
                     }}
                   >
                     see info
@@ -89,7 +93,7 @@ export default function AdminPanel() {
                 </div>
                 
                 <br />
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end buttons">
                   <button
                     type="button"
                     style={{
@@ -97,6 +101,7 @@ export default function AdminPanel() {
                       color: "white",
                       width: "70px",
                       borderRadius: "20px",
+                      height:'30px',
                     }}
                   >
                     see info
@@ -114,7 +119,7 @@ export default function AdminPanel() {
                   <img src={client}/>
                 </div>
                 </div>
-                <div className="d-flex justify-content-end pt-3">
+                <div className="d-flex justify-content-end pt-3 buttons">
                   <button
                     type="button"
                     style={{
@@ -122,6 +127,7 @@ export default function AdminPanel() {
                       color: "white",
                       width: "70px",
                       borderRadius: "20px",
+                      height:'30px',
                     }}
                   >
                     see info
@@ -138,7 +144,7 @@ export default function AdminPanel() {
                   <img src={Agent}/>
                 </div>
                 </div>
-                <div className="d-flex justify-content-end pt-3">
+                <div className="d-flex justify-content-end pt-3 buttons">
                   <button
                     type="button"
                     style={{
@@ -146,6 +152,7 @@ export default function AdminPanel() {
                       color: "white",
                       width: "70px",
                       borderRadius: "20px",
+                      height:'30px',
                     }}
                   >
                     see info
@@ -155,7 +162,12 @@ export default function AdminPanel() {
               </div>
             </div>
           </div>
-          
+          <div className="col-md-12">
+              <Charts />
+            </div>
+            <div className="col-md-12 mt-5">
+              <Tables />
+            </div>
           </div>
         </div>
       </div>
