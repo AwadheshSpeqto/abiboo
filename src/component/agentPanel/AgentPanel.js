@@ -8,6 +8,7 @@ export default function AgentPanel() {
         <div className="row">
           <div className="col-md-12">
             <div className="agentspanel">
+            <div className="rounded">
               <div className="Agents">
                 <h4 className="fw-bold">API Management</h4>
                 <input
@@ -28,19 +29,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -48,19 +38,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -68,19 +47,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -88,19 +56,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -108,19 +65,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -128,19 +74,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -148,19 +83,8 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
               <div className="agentName pt-3">
@@ -168,23 +92,13 @@ export default function AgentPanel() {
                 <p>123456789</p>
                 <h5>24-02-2023</h5>
                 <h5>24-02-2023</h5>
-                <div style={{ wordSpacing: "10px" }}>
-                  <button
-                    type="button"
-                    style={{
-                      backgroundColor: "#343a40",
-                      color: "white",
-                      borderRadius: "15px",
-                      width: "80px",
-                      height: "30px",
-                    }}
-                  >
-                    Disable
-                  </button>
+                <div >
+                  <button type="button" className="btndisable">Disable</button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

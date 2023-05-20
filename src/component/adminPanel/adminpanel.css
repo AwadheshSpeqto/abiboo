@@ -2,55 +2,100 @@
 
 .head{
     font-family: Open Sans;
-font-size: 29px;
+font-size: 20px;
 font-weight: 700;
-line-height: 40px;
 letter-spacing: 0em;
 text-align: left;
+border-bottom: 1px solid black;
 
 }
-.buttons{
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+     width: 100%; 
+     padding: right 0;
+     padding-left: 0; 
+     margin-right: 0;
+     margin-left: 0; 
+}
+ .backGround{
+ background-color:#d1c3b4;
+  border-radius: 20px;
+ }
+ .col-md-4.client.bg-white {
+    margin: 28px;
+    border-radius: 25px;
+    width: 280px;
+    height: 165px;
+}
+
+ .clients {
+    display: flex;
+    justify-content: space-around;
     padding: 15px;
 }
-    
-
-.d-flex.justify-content-space-between.align-items-end {
-    justify-content: space-between;
-    padding: 15px;
+.Totalclient {
+    display: flex;
+    justify-content: space-around;
+    padding: 31px;
 }
-col-md-4.client{
-    padding: 35px;
+button.clientbutton {
+    height: 39px;
+    width: 90px;
+    border-radius: 24px;
+    background-color: #282624;
+    color :white;
 }
-col-md-4.agent{
-    padding: 35px;
+.row.backGround {
+    display: flex;
+    justify-content: space-evenly;
 }
-.client {
-    background-color: #dac9c9;
-    border-radius: 20px;
-    padding: 30px;
-    
+.col-md-6.agent.bg-white {
+    margin: 26px;
+    width: 460px;
+    border-radius: 25px;
+    height: 165px;
 }
-.consumer{
-    background-color: #dac9c9;
-    border-radius: 20px;
-    padding: 30px;
+.col-md-6.customers.bg-white {
+    margin: 26px;
+    width: 460px;
+    border-radius: 25px;
+    height: 165px;
 }
-.agent{
-    background-color: #dac9c9;
-    border-radius: 20px;
-    padding: 30px;
-    /* margin: 5px; */
-
+.Totalagents {
+    display: flex;
+    justify-content: space-around;
+    padding: 31px;
 }
-.col-md-4.client {
-    padding: 35px;
+.row.count {
+    display: flex;
+    justify-content: space-evenly;
 }
-.col-md-4.agent {
-    padding: 35px;
+.col-md-4.client.bg-white:hover {
+    background-color: #614635;
 }
-
-tr:hover{
-    background-color:#dac9c9;
+.ApiKey {
+    display: flex;
+    justify-content: flex-end;
+}
+button.ApiButton {
+    height: 39px;
+    width: 195px;
+    border-radius: 12px;
+    background-color: #614635;
     color: white;
-    border-radius: 30px;
+}
+p.createclient {
+    margin-left: 50px;
+}
+tr:hover{
+    background-color: #614635;
+    /* background-color: red; */
+    color: white;
+    border: 12 !important;
+    border-radius: 100px;
+}
+.container.dashboard {
+    padding: 30px;
 }

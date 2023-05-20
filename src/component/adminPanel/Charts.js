@@ -29,9 +29,9 @@ const Charts = () => {
   };
 
   return (
-    <div className='container mt-5' style={{backgroundColor:'#dac9c9',borderRadius:'20px',border:'25px solid rgb(83, 71, 71)'}}>
+    <div className='container mt-5' style={{backgroundColor:'white',borderRadius:'40px',border:'20px solid #d1c3b4',color:'black'}}>
     <div className='row'>
-    <Chart options={options} series={data} type="line" height={350} width={1000} />
+    <Chart options={options} series={data} type="line" height={450} width={1150} />
     </div>
     </div>
   );

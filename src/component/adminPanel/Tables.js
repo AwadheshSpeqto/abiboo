@@ -3,13 +3,13 @@ import React from "react";
 export default function Tables() {
   return (
     <>
-      <div className="container" style={{borderRadius:'20px',border:'25px solid rgb(83, 71, 71)'}}>
+      <div className="container" style={{borderRadius:'40px',border:'20px solid #d1c3b4'}}>
         <div className="row">
           <div className="col-md-12">
             <div className="table-responsive">
               <table className="table text-center">
                 <thead>
-                  <tr style={{borderTopLeftRadius:'20px'}}>
+                  <tr className="table_header">
                     <th scope="col">Streaming Now</th>
                     <th scope="col">Number of Agents</th>
                     <th scope="col">Number of Customers</th>

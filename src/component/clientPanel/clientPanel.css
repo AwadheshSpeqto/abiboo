@@ -1,14 +1,16 @@
 .ClientPanel{
     overflow: hidden;
+    width: 100%;
 }
 
 .Cpanel{
     font-family: Open Sans;
-    font-size: 29px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
+    border-bottom: 1px solid black;
 }
 div.row{
     margin: 0;
@@ -38,8 +40,17 @@ div.row{
         justify-content: space-around;
     }
     .Details {
-        background-color: rgb(194, 174, 174);
-        border-radius: 20px;
-        border: 20px solid rgb(83, 71, 71);
+        background-color: white;
+        border-radius: 40px;
+        border: 25px solid #d1c3b4;
+        
     }
-    
+    .row.panel {
+        padding: 35px;
+    }
+    button.btndisable {
+        width: 75px;
+        height: 29px;
+        background-color: #282624;
+        color: white;
+    }
