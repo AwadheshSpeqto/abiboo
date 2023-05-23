@@ -1,40 +1,87 @@
-
 import React from 'react';
 import Chart from 'react-apexcharts';
 
+
 const Charts = () => {
-  const data = [
-    {
-      name: 'Streams',
-      data: [90, 25, 0, 50, 60, 20, 30, 40, 50,60,70,80],
-    },
-    {
-      name: 'Customers',
-      data: [50, 0, 30, 5, 10, 70, 80, 90, 100,110,120,130],
-    },
-  ];
-
-  const options = {
-    chart: {
-      id: 'double-line-chart',
-    },
-    xaxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep','Oct','Nov','Dec'],
-    },
-    yaxis: {
-      min: 0,
-      max: 250
-    }
-    
+    const options = {
+      chart: {
+        id: 'double-line-chart',
+        toolbar: {
+          show: false,
+        },
+      },
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May','june','Jul','Aug','Sep','Oct','Nov','Dec'],
+      },
+      yaxis: {
+        min: 0,
+        max: 250,
+        breakpoints: [
+            {
+              from: 0,
+              to: 50,
+            
+            },
+            {
+              from: 50,
+              to: 100,
+            },
+            {
+                from: 100,
+                to: 150,
+              },
+              {
+                from: 150,
+                to: 200,
+              },
+              {
+                from: 200,
+                to: 250,
+              },
+          ],
+          
+      },
+      title: {
+        text: 'Total Visitor',
+        align: 'left',
+        style: {
+          fontSize: '15px',
+          fontWeight: 'bold',
+          color: '#333',
+          marginTop:'40px',
+        },
+      },
+      
+      stroke: {
+        curve: 'smooth',
+      },
+      responsive: [
+        {
+          breakpoint: 50,
+          options: {
+            chart: {
+              width: '100%',
+            },
+          },
+        },
+      ],
+    };
+  
+    const series = [
+      {
+        name: 'Streams',
+        data: [98, 25, 50, 50, 90,45, 10, 30, 15, 50,25,54],
+      },
+      {
+        name: 'Customers',
+        data: [49, 6, 75, 15, 50,20, 40, 60, 50, 100,50,20],
+      },
+    ];
+  
+    return (
+      <div className="chart">
+        <Chart options={options} series={series} type="line" height="400" style={{border:'20px solid  #d1c3b4',backgroundColor:'white', borderRadius:'40px',marginTop:'50px'}}/>
+      </div>
+    );
   };
-
-  return (
-    <div className='container mt-5' style={{backgroundColor:'white',borderRadius:'40px',border:'20px solid #d1c3b4',color:'black'}}>
-    <div className='row'>
-    <Chart options={options} series={data} type="line" height={450} width={1150} />
-    </div>
-    </div>
-  );
-};
-
-export default Charts;
+   export default Charts;

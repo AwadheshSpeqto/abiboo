@@ -1,0 +1,100 @@
+.container {
+    /* font-family: Montserrat; */
+    font-size: 15px;
+    font-family: var(--bs-body-font-family);
+}
+
+.ClientPanel {
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.Cpanel {
+    font-family: Open Sans;
+    font-size: 20px;
+    /* font-weight: 700; */
+    line-height: 40px;
+    font-family: var(--bs-body-font-family);
+    letter-spacing: 0em;
+    text-align: left;
+    border-bottom: 1px solid rgb(164, 160, 160);
+}
+
+.row>* {
+    padding: 0 !important;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    font-family: Open-Sans;
+}
+
+input[type="text"] {
+    width: 202px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: white !important;
+}
+
+.clientTable.pt-4 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(214, 211, 211);
+}
+
+.ClientName {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Details {
+    background-color: white;
+    border-radius: 40px;
+    border: 25px solid #d1c3b4;
+
+}
+
+.row.panel {
+    padding: 23px;
+}
+
+button.btndisable.me-1 {
+    width: 75px;
+    height: 29px;
+    background-color: #282624;
+    color: white !important;
+    border-radius: 20px;
+}
+
+
+.check {
+
+    top: 158px;
+
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.5386px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #282624;
+}

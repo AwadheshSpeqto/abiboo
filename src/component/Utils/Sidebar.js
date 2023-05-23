@@ -16,9 +16,7 @@ import '../Utils/sidebar.css';
 
 const Sidebar = () => {
 return (
-<div
-style={{ display: 'flex', height: '100%', overflow: 'hidden' }}
->
+<div className='h-100'>
 <CDBSidebar textColor="#000000" backgroundColor="#F1F0EF">
 <CDBSidebarHeader>
 
@@ -26,26 +24,30 @@ style={{ display: 'flex', height: '100%', overflow: 'hidden' }}
 </CDBSidebarHeader>
 <CDBSidebarContent className="sidebar-content">
 <CDBSidebarMenu>
-<NavLink exact to="/adminpanel" activeClassName="activeClicked">
+<NavLink exact to="/adminpanel" activeClassName="activeClicked" >
 <CDBSidebarMenuItem ><img src={fourDot} />&nbsp;
-Dashboard</CDBSidebarMenuItem>
+<span>Dashboard</span>
+</CDBSidebarMenuItem>
 </NavLink>
 <NavLink exact to="/clientpanel" activeClassName="activeClicked">
 <CDBSidebarMenuItem > <img src={chart} />&nbsp;
-Client Management</CDBSidebarMenuItem>
+<span>Client Management</span>
+</CDBSidebarMenuItem>
 </NavLink>
 <NavLink exact to="/agentpanel" activeClassName="activeClicked">
 <CDBSidebarMenuItem >  <img src={stream} />&nbsp;
-API Management</CDBSidebarMenuItem>
-</NavLink>
-<NavLink exact to="/clientstreaming" activeClassName="activeClicked">
-<CDBSidebarMenuItem>  <img src={setting} />&nbsp;
-Streaming
+<span>API Management
+</span>
 </CDBSidebarMenuItem>
 </NavLink>
 <NavLink exact to="/clientstreaming" activeClassName="activeClicked">
 <CDBSidebarMenuItem>  <img src={setting} />&nbsp;
-Setting
+<span>Streaming</span>
+</CDBSidebarMenuItem>
+</NavLink>
+<NavLink exact to="/clientstreaming" activeClassName="activeClicked">
+<CDBSidebarMenuItem>  <img src={setting} />&nbsp;
+<span>Setting </span>
 </CDBSidebarMenuItem>
 </NavLink>
 </CDBSidebarMenu>

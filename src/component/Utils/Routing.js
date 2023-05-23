@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route} from "react-router-dom";
 import AdminPanel from "../adminPanel/AdminPanel";
-import ClientPanel from "../clientPanel/ClientPanel";
+import ClientPanel from "../clientPanel/ClientManagement/ClientPanel";
 import AgentPanel from "../agentPanel/AgentPanel";
 import ClientStreaming from "../clientStreaming/ClientStreaming";
 

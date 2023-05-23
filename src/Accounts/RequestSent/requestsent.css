@@ -1,0 +1,9 @@
+.container.Sent {
+    text-align: center;
+    margin-top: 40px;
+    width: 33%;
+}
+h5.fw-bold {
+    border-bottom: 1px solid black;
+    padding: 20px;
+}

@@ -1,101 +1,148 @@
-
-
-.head{
+.head {
     font-family: Open Sans;
-font-size: 20px;
-font-weight: 700;
-letter-spacing: 0em;
-text-align: left;
-border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    border-bottom: 1px solid black;
+    width: 100%;
 
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
-     width: 100%; 
-     padding: right 0;
-     padding-left: 0; 
-     margin-right: 0;
-     margin-left: 0; 
-}
- .backGround{
- background-color:#d1c3b4;
-  border-radius: 20px;
- }
- .col-md-4.client.bg-white {
-    margin: 28px;
-    border-radius: 25px;
-    width: 280px;
-    height: 165px;
+    width: 100%;
+    padding: right 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
- .clients {
+.createclient {
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    justify-content: end;
 }
+
+.backGround {
+    background-color: #d1c3b4;
+    border-radius: 20px;
+   
+}
+
+.col-md-4.client.bg-white {
+    border-radius: 25px;
+    width: 312px;
+    height: 170px;
+    
+}
+
+p.fw-bold {
+    font-size: 20px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.clientInfo {
+    padding: 18px 27px;
+}
+
 .Totalclient {
     display: flex;
-    justify-content: space-around;
-    padding: 31px;
+    justify-content: space-between;
+    padding: 14px 15px;
 }
+
 button.clientbutton {
     height: 39px;
     width: 90px;
     border-radius: 24px;
     background-color: #282624;
-    color :white;
-}
-.row.backGround {
-    display: flex;
-    justify-content: space-evenly;
-}
-.col-md-6.agent.bg-white {
-    margin: 26px;
-    width: 460px;
-    border-radius: 25px;
-    height: 165px;
-}
-.col-md-6.customers.bg-white {
-    margin: 26px;
-    width: 460px;
-    border-radius: 25px;
-    height: 165px;
-}
-.Totalagents {
-    display: flex;
-    justify-content: space-around;
-    padding: 31px;
-}
-.row.count {
-    display: flex;
-    justify-content: space-evenly;
-}
-.col-md-4.client.bg-white:hover {
-    background-color: #614635;
-}
-.ApiKey {
-    display: flex;
-    justify-content: flex-end;
-}
-button.ApiButton {
-    height: 39px;
-    width: 195px;
-    border-radius: 12px;
-    background-color: #614635;
     color: white;
 }
-p.createclient {
-    margin-left: 50px;
+button.clientbutton:hover{
+    background-color:#F1F0EF ;
+    color: black;
 }
-tr:hover{
+
+.row.backGround {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.col-md-6.agent.bg-white {
+    width: 45%;
+    border-radius: 25px;
+    
+}
+
+.col-md-6.customers.bg-white {
+    width: 45%;
+    border-radius: 25px;
+    
+}
+
+.activeclients {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 35px;
+}
+
+.Totalagents {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px;
+}
+
+.customerclients {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 38px;
+}
+
+.row.count {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+tr:hover {
     background-color: #614635;
     /* background-color: red; */
     color: white;
     border: 12 !important;
     border-radius: 100px;
 }
-.container.dashboard {
-    padding: 30px;
+
+.div.col-md-4 .client .bg-white:hover{
+    background-color: #614635;
+    
+}
+.row.backGround.p-5.mt-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-4.client.bg-white:hover{
+    background-color:#614635 !important;
+    color: #F1F0EF;
+}
+.col-md-6.agent.bg-white:hover {
+    background-color:#614635 !important;
+    color:#F1F0EF;
+}
+.col-md-6.col-sm-12.customers.bg-white:hover {
+    background-color:#614635 !important;
+    color: #F1F0EF;
 }

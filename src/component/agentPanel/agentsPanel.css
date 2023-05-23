@@ -1,12 +1,13 @@
 .Agents {
     display: flex;
     justify-content: space-between;
+    padding: 30px;
 }
 .agentsdetails {
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid;
-    margin-top: 47px;
+    border-bottom: 1px solid lightgray;
+    margin-top: 20px;
 }
 .agentName.pt-3 {
     display: flex;
@@ -18,4 +19,35 @@
     padding: 36px;
     background-color: white;
     margin: 40px;
+    font-family: open Sans;
+    text-align: center;
+}
+.rounded {
+    font-family: roboto;
+}
+button.btndisabl {
+    width: 75px;
+    height: 29px;
+    color: rgb(13, 11, 11);
+    font-size: 12px;
+    border-radius: 20px;
+}
+button.btnApprove {
+    width: 75px;
+    height: 29px;
+    color:black;
+    font-size: 12px;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: #E9D1BD;
+    color: white;
+}
+
+.apimng{
+    width: 100%;
+    font-family: var(--bs-body-font-family);
+}
+.check{
+    font-size: 17px;
 }
