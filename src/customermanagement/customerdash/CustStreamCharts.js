@@ -45,7 +45,7 @@ const Charts = () => {
           
       },
       title: {
-        text: 'Total Visitor',
+        text: 'Total Streams',
         align: 'left',
         style: {
           fontSize: '15px',
@@ -69,17 +69,18 @@ const Charts = () => {
         },
       ],
     };
+    
   
     const series = [
       {
         name: 'Streams',
-        data: [98, 25, 50, 50, 90,45, 10, 30, 15, 50,25,54],
+        data: [98, 40, 10, 90, 20,120, 20, 90, 30, 100,25,54],
         color:'#576462',
       },
       {
         name: 'Customers',
-        data: [49, 6, 75, 15, 50,20, 40, 60, 50, 100,50,20],
-        color:'#614635'
+        data: [49, 6, 75, 15, 130,10, 120, 10, 80, 30,50,20],
+        color:'#614635',
       },
     ];
   

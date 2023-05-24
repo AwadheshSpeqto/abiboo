@@ -1,10 +1,12 @@
 import React from "react";
-import "./agentsPanel.css";
+// import "./agentsPanel.css";
 import { useState, useEffect } from "react";
 import creates from "../../assests/icons/createclient.png";
 import ApiRequest from "../../Accounts/ApiRequest/ApiRequest";
+import './apimanagement.css';
+import CreateApiKey from '../ApiManagement/CreateApiKey';
 
-export default function AgentPanel() {
+export default function ApiManagement() {
   const [fack, setFack] = useState([]);
   const getUsers = async () => {
     try {
@@ -31,8 +33,8 @@ export default function AgentPanel() {
           <div className="col-md-12">
             <div className="d-flex justify-content-between border-bottom ">
               <div className="dash_heading">
-                <h3 className="fw-bold">Dashboard</h3>
-                <p>See your account information in here!</p>
+                <h3 className="fw-bold">API Management</h3>
+                <p>See your api information in here!</p>
               </div>
               <div>
                 <h6>
@@ -45,22 +47,19 @@ export default function AgentPanel() {
               </div>
             </div>
           </div>
-          <ApiRequest />
+          {/* <ApiRequest /> */}
+          <CreateApiKey/>
           <div className="addbutton d-flex justify-content-end mt-3 mb-3">
-            <div className="check">
-              Create Client
-              <img
-                src={creates}
-                onClick={handleApi}
-                height="40px"
-                width="40px"
-              />
-            </div>
+          <div className="ApiKey mt-4">
+                <button type="button" className="SetApiButton">
+                  Set Api Key
+                </button>
+              </div>
           </div>
           <div className="agentspanel">
             <div className="rounded">
               <div className="Agents">
-                <h4 className="fw-bold">Request to change API</h4>
+                <h4 className="fw-bold">API Management</h4>
                 <div class="form-group has-search">
                   <span class="fa fa-search form-control-feedback"></span>
                   <input
@@ -89,12 +88,13 @@ export default function AgentPanel() {
                         {cur.birthDate.split("").join("")}
                       </tr>
                       <div className="apibutton">
-                        <button type="button" className="btndisabl me-2">
-                          Discard
+                        <button type="button" className="apidisable me-2">
+
+                          Disable
                         </button>
-                        <button type="button" className="btnApprove">
+                        {/* <button type="button" className="btnApprove">
                           Approve
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   );

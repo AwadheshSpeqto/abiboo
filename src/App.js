@@ -8,6 +8,7 @@ import ClientDetails from "./Accounts/ClientDetails/ClientDetails";
 // import CustomersMng from "./Accounts/CustomersMng";
 import RequestSent from "./Accounts/RequestSent/RequestSent";
 import ApiRequest from "./Accounts/ApiRequest/ApiRequest";
+import CreateApiKey from './ClientDashboard/ApiManagement/CreateApiKey'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <div className="container-fluid ">
         <div className="row backGr">
 
-          <div className="col-md-2  ">
+           <div className="col-md-2  ">
             <Sidebar />
           </div>
           <div className="col-md-10 ">
@@ -23,7 +24,8 @@ function App() {
               <Routing />
 
             </div>
-          </div>
+          </div> 
+          {/* <CreateApiKey/> */}
           {/* <ClientDetails/> */}
           {/* <CustomersMng/> */}
           {/* <RequestSent/> */}

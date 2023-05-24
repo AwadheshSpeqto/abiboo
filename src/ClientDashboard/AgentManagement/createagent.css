@@ -3,10 +3,16 @@ button {
     height: 50px;
 }
 button.cancelbutton {
-    border-radius: 23px;
+    border-radius: 25px;
+    width: 60%;
 }
 button.savebutton {
-    border-radius: 23px;
+    border-radius: 25px;
+    width: 60%;
+}
+button.savebutton {
+    background-color: burlywood;
+    color: white;
 }
 
 .row.ClientAccount {
@@ -66,6 +72,7 @@ input.user {
     background-color: black!important;
     color: white;
     width: 80%;
+    text-indent: 15px;
 }
 input.password {
     border: none;
@@ -73,6 +80,7 @@ input.password {
     background-color: black!important;
     color: white;
     width: 80%;
+    text-indent: 15px;
 }
 
 .ClientAccount{
@@ -85,4 +93,7 @@ input.name.mt-2 {
 .container.ClientAccount {
     position: absolute;
     font-family: Open Sans;
+}
+input.name.mt-2.text-light {
+    text-indent: 15px;
 }

@@ -1,22 +1,20 @@
 import React from "react";
-import "./adminpanel.css";
 import create from "../../assests/icons/add-square.png";
 import client from "../../assests/icons/Frame 3.png";
 import Agent from "../../assests/icons/Frame 26.png";
-import Tables from "../adminPanel/Table/Tables";
 import Charts from "../../component/adminPanel/Charts";
-import Agents from '../../assests/icons/Frame 26 (1).png';
+import Agents from "../../assests/icons/Frame 26 (1).png";
+import StreamCharts from '../AdminDasnboard/StreamCharts';
+import './admindash.css';
 
-export default function AdminPanel() {
-
+export default function AdminDash() {
   return (
     <>
       <div id="adminPanel" className="h-100  w-100">
         <div className="container-fluid">
           <div className="row ">
             <div className="mt-4 row">
-              
-                <div className="d-flex justify-content-between border-bottom ">
+            <div className="d-flex justify-content-between border-bottom ">
                 <div className="dash_heading">
                   <h3 className="fw-bold">Dashboard</h3>
                   <p>See your account information in here!</p>
@@ -25,14 +23,18 @@ export default function AdminPanel() {
                     <h6>Erfan Rezaii<i className='fas fa-sort-down' style={{ fontSize: '24px' }}></i></h6>
                   </div>
                   </div>
-              
             </div>
-            <div className="createclient p-3">
-              <div className=" mt-2 fw-bold">
-                Create Client
+            <div className="d-flex justify-content-end">
+              <div className="ApiKey mt-4">
+                <button type="button" className="ApiButton">
+                  Set Api Key
+                </button>
               </div>
-              <div>
-                <img src={create} height='95%' width='95%' />
+              <div className="createclient p-3">
+                <div className=" mt-2 fw-bold">Create Client</div>
+                <div>
+                  <img src={create} height="95%" width="95%" />
+                </div>
               </div>
             </div>
           </div>
@@ -43,7 +45,7 @@ export default function AdminPanel() {
                   <div className="clientInfo ">
                     <div className=" clients">
                       <img src={client} />
-                      <p className="fw-bold">Total Clients</p>
+                      <p className="fw-bold">Total Streams</p>
                     </div>
                     <div className="Totalclient">
                       <h3 className="fw-bold">1000</h3>
@@ -60,7 +62,7 @@ export default function AdminPanel() {
                       <p className="fw-bold">Total Agents</p>
                     </div>
                     <div className="Totalclient">
-                      <h3 className='fw-bold'>125K</h3>
+                      <h3 className="fw-bold">125K</h3>
                       <button type="button" className="clientbutton">
                         see info
                       </button>
@@ -111,11 +113,8 @@ export default function AdminPanel() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12 col-sm-12 col-12">
-              <Charts />
-            </div>
             <div className="col-md-12 mt-5">
-              <Tables />
+              <StreamCharts />
             </div>
           </div>
         </div>

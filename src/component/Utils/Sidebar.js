@@ -1,63 +1,118 @@
-import React from 'react';
+import React from "react";
 import {
-CDBSidebar,
-CDBSidebarContent,
-CDBSidebarHeader,
-CDBSidebarMenu,
-CDBSidebarMenuItem,
-} from 'cdbreact';
-import logo from '../../assests/Abiboo.png';
+  CDBSidebar,
+  CDBSidebarContent,
+  CDBSidebarHeader,
+  CDBSidebarMenu,
+  CDBSidebarMenuItem,
+} from "cdbreact";
+import logo from "../../assests/Abiboologo.png";
 import fourDot from "../../assests/icons/element-4.png";
 import chart from "../../assests/icons/chart-2.png";
 import stream from "../../assests/icons/diagram.png";
 import setting from "../../assests/icons/setting.png";
-import { NavLink } from 'react-router-dom';
-import '../Utils/sidebar.css';
+import { NavLink } from "react-router-dom";
+import "../Utils/sidebar.css";
 
 const Sidebar = () => {
-return (
-<div className='h-100'>
-<CDBSidebar textColor="#000000" backgroundColor="#F1F0EF">
-<CDBSidebarHeader>
-
-<img src={logo} width='200px'/>
-</CDBSidebarHeader>
-<CDBSidebarContent className="sidebar-content">
-<CDBSidebarMenu>
-<NavLink exact to="/adminpanel" activeClassName="activeClicked" >
-<CDBSidebarMenuItem ><img src={fourDot} />&nbsp;
-<span>Dashboard</span>
-</CDBSidebarMenuItem>
-</NavLink>
-<NavLink exact to="/clientpanel" activeClassName="activeClicked">
-<CDBSidebarMenuItem > <img src={chart} />&nbsp;
-<span>Client Management</span>
-</CDBSidebarMenuItem>
-</NavLink>
-<NavLink exact to="/agentpanel" activeClassName="activeClicked">
-<CDBSidebarMenuItem >  <img src={stream} />&nbsp;
-<span>API Management
-</span>
-</CDBSidebarMenuItem>
-</NavLink>
-<NavLink exact to="/clientstreaming" activeClassName="activeClicked">
-<CDBSidebarMenuItem>  <img src={setting} />&nbsp;
-<span>Streaming</span>
-</CDBSidebarMenuItem>
-</NavLink>
-<NavLink exact to="/clientstreaming" activeClassName="activeClicked">
-<CDBSidebarMenuItem>  <img src={setting} />&nbsp;
-<span>Setting </span>
-</CDBSidebarMenuItem>
-</NavLink>
-</CDBSidebarMenu>
-</CDBSidebarContent>
-</CDBSidebar>
-</div>
-);
+  return (
+    <div className="h-100">
+      <CDBSidebar textColor="#000000" backgroundColor="#F1F0EF">
+        <CDBSidebarHeader>
+          <img src={logo} width="200px" />
+        </CDBSidebarHeader>
+        <CDBSidebarContent className="sidebar-content">
+          <CDBSidebarMenu>
+            <NavLink exact to="/adminpanel" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                <img src={fourDot} />
+                &nbsp;
+                <span>Dashboard</span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/clientpanel" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={chart} />
+                &nbsp;
+                <span>Client Management</span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/agentpanel" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={stream} />
+                &nbsp;
+                <span>API Management</span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/admindash" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span>Client Management</span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink
+              exact
+              to="/agentmanagement"
+              activeClassName="activeClicked"
+            >
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span>Client Management Table </span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/apimanagement" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span>API Management Table </span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/customerdashboard" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span>Customer Dashboard </span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/customerdatatable" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span> Data Table </span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/customerapitable" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span>API Management </span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/customerstreams" activeClassName="activeClicked">
+              <CDBSidebarMenuItem>
+                {" "}
+                <img src={setting} />
+                &nbsp;
+                <span>Customers Streams</span>
+              </CDBSidebarMenuItem>
+            </NavLink>
+          </CDBSidebarMenu>
+        </CDBSidebarContent>
+      </CDBSidebar>
+    </div>
+  );
 };
 export default Sidebar;
-
 
 // import React from "react";
 // import logo from "../../assests/Abiboo.png";
@@ -125,38 +180,3 @@ export default Sidebar;
 //     </>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

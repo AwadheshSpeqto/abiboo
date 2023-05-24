@@ -1,13 +1,12 @@
 import React from "react";
-import "./adminpanel.css";
+// import "./adminpanel.css";
 import create from "../../assests/icons/add-square.png";
 import client from "../../assests/icons/Frame 3.png";
 import Agent from "../../assests/icons/Frame 26.png";
-import Tables from "../adminPanel/Table/Tables";
-import Charts from "../../component/adminPanel/Charts";
+import CustStreamCharts from '../customerdash/CustStreamCharts';
 import Agents from '../../assests/icons/Frame 26 (1).png';
 
-export default function AdminPanel() {
+export default function Customerdashboard() {
 
   return (
     <>
@@ -82,40 +81,11 @@ export default function AdminPanel() {
                   </div>
                 </div>
               </div>
-              <div className=" row mt-5 justify-content-between ">
-                <div className="col-md-6 agent bg-white">
-                  <div className=" activeclients">
-                    <img src={client} />
-                    <p className="fw-bold">Active Agents</p>
-                  </div>
-                  <div className="Totalagents">
-                    <h3 className="fw-bold">2000</h3>
-                    <button type="button" className="clientbutton">
-                      see info
-                    </button>
-                  </div>
-                </div>
-                <div className="col-md-6 col-sm-12 customers bg-white">
-                  <div className=" customerclients">
-                    <img src={Agents} />
-                    <p className="fw-bold">Active Customers</p>
-                  </div>
-                  <div className="Totalagents">
-                    <h3 className="fw-bold">125K</h3>
-                    <button type="button" className="clientbutton">
-                      see info
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12 col-sm-12 col-12">
-              <Charts />
-            </div>
-            <div className="col-md-12 mt-5">
-              <Tables />
+              <CustStreamCharts />
             </div>
           </div>
         </div>
