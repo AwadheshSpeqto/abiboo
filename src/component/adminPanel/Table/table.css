@@ -3,6 +3,7 @@
     border: 20px solid #d1c3b4;
     padding: 13px 50px;
     background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 table td, #customers th {

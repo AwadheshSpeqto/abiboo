@@ -10,6 +10,8 @@
     "@testing-library/user-event": "^13.5.0",
     "@voxeet/voxeet-web-sdk": "^3.9.0",
     "apexcharts": "^3.40.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.16",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",

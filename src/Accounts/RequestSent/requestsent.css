@@ -7,3 +7,12 @@ h5.fw-bold {
     border-bottom: 1px solid black;
     padding: 20px;
 }
+button.discard {
+    height: 45px;
+    width: 145px;
+}
+
+button.approve{
+    height:45px;
+    width:145px;
+}

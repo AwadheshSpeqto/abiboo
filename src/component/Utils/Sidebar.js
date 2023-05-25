@@ -19,6 +19,7 @@ const Sidebar = () => {
     <div className="h-100">
       <CDBSidebar textColor="#000000" backgroundColor="#F1F0EF">
         <CDBSidebarHeader>
+      
           <img src={logo} width="200px" />
         </CDBSidebarHeader>
         <CDBSidebarContent className="sidebar-content">

@@ -47,8 +47,12 @@ export default function ClientPanel() {
               </div>
             </div>
           </div>
-          {/* <ClientDetails /> */}
+          {
+            data &&
           <CreateAgent/>
+          
+          }
+          
           <div className="addbutton d-flex justify-content-end mt-3 mb-3">
             <div className="check fw-bold">
               Create Client

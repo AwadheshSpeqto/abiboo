@@ -38,13 +38,13 @@
 
 .col-md-4.client.bg-white {
     border-radius: 25px;
-    width: 312px;
+    width: 317px;
     height: 170px;
     
 }
 
 p.fw-bold {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .clients {
@@ -82,13 +82,13 @@ button.clientbutton:hover{
 }
 
 .col-md-6.agent.bg-white {
-    width: 45%;
+    width: 475px;
     border-radius: 25px;
     
 }
 
 .col-md-6.customers.bg-white {
-    width: 45%;
+    width: 475px;
     border-radius: 25px;
     
 }

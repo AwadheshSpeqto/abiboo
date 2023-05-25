@@ -9,13 +9,15 @@ import ClientDetails from "./Accounts/ClientDetails/ClientDetails";
 import RequestSent from "./Accounts/RequestSent/RequestSent";
 import ApiRequest from "./Accounts/ApiRequest/ApiRequest";
 import CreateApiKey from './ClientDashboard/ApiManagement/CreateApiKey'
+import CreateAgent from "./ClientDashboard/AgentManagement/CreateAgent";
+import Resetapi from "./customermanagement/customerapimanagement/resetapi/Resetapi";
 
 function App() {
   return (
     <>
       <div className="container-fluid ">
         <div className="row backGr">
-
+ 
            <div className="col-md-2  ">
             <Sidebar />
           </div>
@@ -25,11 +27,13 @@ function App() {
 
             </div>
           </div> 
+          {/* <CreateAgent/> */}
           {/* <CreateApiKey/> */}
           {/* <ClientDetails/> */}
           {/* <CustomersMng/> */}
           {/* <RequestSent/> */}
           {/* <ApiRequest/> */}
+          {/* <Resetapi/> */}
         </div>
         </div>
     </>

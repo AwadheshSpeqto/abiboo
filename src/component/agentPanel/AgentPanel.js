@@ -70,6 +70,7 @@ export default function AgentPanel() {
                   />
                 </div>
               </div>
+              <div className="col-md-12 col-sm-12 md-2 mb-md-0">
               <div className="agentsdetails fw-bold table-responsive">
                 <h5>Username</h5>
                 <h5>Key</h5>
@@ -99,6 +100,7 @@ export default function AgentPanel() {
                     </div>
                   );
                 })}
+            </div>
             </div>
           </div>
         </div>

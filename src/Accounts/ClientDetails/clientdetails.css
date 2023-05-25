@@ -4,6 +4,15 @@ button {
 }
 button.cancelbutton {
     border-radius: 23px;
+
+}
+button.cancelbutton {
+    width: 131px;
+    height: 45px;
+}
+button.savebutton {
+    width: 131px;
+    height: 45px;
 }
 button.savebutton {
     border-radius: 23px;
@@ -82,7 +91,7 @@ input.name.mt-2 {
     background-color: black!important;
     color: white;
 }
-.container.ClientAccount {
+/* .container.ClientAccount {
     position: absolute;
     font-family: Open Sans;
-}
+} */

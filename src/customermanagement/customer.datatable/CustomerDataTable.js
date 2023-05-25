@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import "./clientPanel.css";
 import create from "../../assests/icons/add-square.png";
+import Createcustomer from "../customer.datatable/Createcustomer";
 // import ClientDetails from "../../../Accounts/ClientDetails/ClientDetails";
 // import clientData from "./List";
 // import CreateAgent from '../AgentManagement/CreateAgent'
@@ -30,7 +31,7 @@ export default function CustomerDataTable() {
     <>
       <div className="container clientPanel">
         <div className="row panel">
-          <div className="col-md-12">
+          <div className="col-md-12 col-sm-12">
             <div className="d-flex justify-content-between border-bottom ">
               <div className="dash_heading">
                 <h3 className="fw-bold">Customer Management</h3>
@@ -49,14 +50,18 @@ export default function CustomerDataTable() {
           </div>
           {/* <ClientDetails /> */}
           {/* <CreateAgent/> */}
+          {
+              data &&
+          <Createcustomer/>
+          }
           <div className="addbutton d-flex justify-content-end mt-3 mb-3">
             <div className="check fw-bold">
               Create Customer
               <img
                 src={create}
                 onClick={handlePopup}
-                height="40px"
-                width="40px"
+                height=""
+                width=""
               />
             </div>
           </div>

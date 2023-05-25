@@ -2,9 +2,9 @@
     background-color: #614635;
     border-radius: 10px;
     color: white;
-    width: 220%;
-    height:70%
+    width: 180px;
+    height:65%
 }
-.createclient.p-3 {
-    margin-left: 100px;
+.ApiKey.mt-4 {
+    padding-right: 5%;
 }

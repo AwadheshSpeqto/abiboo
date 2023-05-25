@@ -41,9 +41,10 @@
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
-    font-family: Open-Sans;
+        display: flex;
+        justify-content: space-between;
+        font-family: Open-Sans;
+        width: 90%;
 }
 
 input[type="text"] {

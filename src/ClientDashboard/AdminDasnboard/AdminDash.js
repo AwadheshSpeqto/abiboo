@@ -41,7 +41,7 @@ export default function AdminDash() {
           <div className="row backGround">
             <div className="p-5">
               <div className="row justify-content-between">
-                <div className="col-md-4  client bg-white ">
+                <div className="col-md-4 col-sm-12 mb-3 mb-md-0 client bg-white ">
                   <div className="clientInfo ">
                     <div className=" clients">
                       <img src={client} />
@@ -55,7 +55,7 @@ export default function AdminDash() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4  client bg-white">
+                <div className="col-md-4 col-sm-12 mb-3 mb-md-0 client bg-white">
                   <div className="clientInfo">
                     <div className=" clients">
                       <img src={Agent} />
@@ -69,7 +69,7 @@ export default function AdminDash() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4  client bg-white">
+                <div className="col-md-4 col-sm-12  mb-md-0 client bg-white">
                   <div className="clientInfo">
                     <div className=" clients">
                       <img src={client} />
@@ -85,7 +85,7 @@ export default function AdminDash() {
                 </div>
               </div>
               <div className=" row mt-5 justify-content-between ">
-                <div className="col-md-6 agent bg-white">
+                <div className="col-md-6 col-sm-12 mb-3 mb-md-0 agent bg-white">
                   <div className=" activeclients">
                     <img src={client} />
                     <p className="fw-bold">Active Agents</p>
@@ -97,7 +97,7 @@ export default function AdminDash() {
                     </button>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12 customers bg-white">
+                <div className="col-md-6 col-sm-12 mb-md-0 agent bg-white">
                   <div className=" customerclients">
                     <img src={Agents} />
                     <p className="fw-bold">Active Customers</p>
